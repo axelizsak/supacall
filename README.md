@@ -1,18 +1,18 @@
-# 📞 SupaCall - AI Phone System for Restaurant Reservations
+# SupaCall - AI Phone System for Restaurant Reservations
 
 An ultra-realistic AI phone system using **Twilio** + **OpenAI Realtime API** to automatically handle restaurant reservations for **Pizza 42**.
 
-## ✨ Features
+##  Features
 
-- 🎙️ **Ultra-realistic voice** with OpenAI Realtime API
-- ⚡ **Ultra-low latency** (<500ms)
-- 🗣️ **Natural interruptions** handled automatically
-- 📅 **Full reservation management** (creation, availability check)
-- 💾 **SQLite database** to store reservations
-- 🌐 **REST API** to view reservations
-- 🔧 **Simple configuration** via .env file
+-  **Ultra-realistic voice** with OpenAI Realtime API
+-  **Ultra-low latency** (<500ms)
+-  **Natural interruptions** handled automatically
+-  **Full reservation management** (creation, availability check)
+-  **SQLite database** to store reservations
+-  **REST API** to view reservations
+-  **Simple configuration** via .env file
 
-## 🚀 Installation
+##  Installation
 
 ### 1. Prerequisites
 
@@ -65,7 +65,7 @@ RESTAURANT_OPENING_HOURS=11:30-14:30,18:30-22:30
 RESTAURANT_MAX_CAPACITY=50
 ```
 
-## 📋 Twilio Configuration
+##  Twilio Configuration
 
 ### 1. Create a Twilio account
 
@@ -87,7 +87,7 @@ In the Twilio console:
 - **Account SID**: In the Twilio Dashboard
 - **Auth Token**: In the Twilio Dashboard (click "Show")
 
-## 🔑 OpenAI Configuration
+##  OpenAI Configuration
 
 ### 1. Get an API key
 
@@ -99,7 +99,7 @@ In the Twilio console:
 
 The Realtime API uses the `gpt-4o-realtime-preview-2024-12-17` model.
 
-## 🌐 Deployment
+##  Deployment
 
 ### Option 1: Local development with ngrok
 
@@ -143,7 +143,7 @@ railway up
    - Start Command: `python main.py`
 5. Add environment variables
 
-## 🎯 Usage
+##  Usage
 
 ### Start the server
 
@@ -168,7 +168,7 @@ curl http://localhost:8000/reservations
 
 Or open in the browser: `http://localhost:8000/reservations`
 
-## 📊 API Endpoints
+##  API Endpoints
 
 | Endpoint | Method | Description |
 |----------|--------|-------------|
@@ -177,7 +177,7 @@ Or open in the browser: `http://localhost:8000/reservations`
 | `/media-stream` | WebSocket | Bidirectional audio stream |
 | `/reservations` | GET | List all reservations |
 
-## 🎨 Customization
+##  Customization
 
 ### Choose the Realtime API model
 
@@ -231,7 +231,7 @@ In [main.py](main.py), add new functions to the `tools` list:
 
 And implement in `execute_function()`.
 
-## 🔧 Troubleshooting
+##  Troubleshooting
 
 ### Problem: AI does not respond
 
@@ -259,7 +259,7 @@ location /media-stream {
 - The Realtime API requires a stable connection
 - Try changing the voice in `session_update` (options: alloy, echo, fable, onyx, nova, shimmer)
 
-## 💰 Estimated costs
+##  Estimated costs
 
 ### Twilio
 - Phone number: ~€1/month
@@ -277,29 +277,25 @@ location /media-stream {
 - OpenAI: 100 × 3 × €0.30 = €90
 - **Total: ~€94/month**
 
-## 🛡️ Security
+##  Security
 
 - ✅ Never commit the `.env` file
 - ✅ Use HTTPS in production
 - ✅ Validate Twilio webhooks with their signature
 - ✅ Restrict API access with authentication
 
-## 📚 Resources
+##  Resources
 
 - [Twilio Documentation](https://www.twilio.com/docs)
 - [OpenAI Realtime API](https://platform.openai.com/docs/guides/realtime)
 - [FastAPI Documentation](https://fastapi.tiangolo.com/)
 
-## 🤝 Support
+##  Support
 
 For any questions or issues:
 1. Check server logs
 2. Consult Twilio and OpenAI documentation
 3. Test locally with ngrok first
-
-## 📝 License
-
-MIT License - Free to use and modify
 
 ---
 
