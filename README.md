@@ -1,6 +1,6 @@
 # SupaCall - AI Phone System for Restaurant Reservations
 
-An ultra-realistic AI phone system using **Twilio** + **OpenAI Realtime API** to automatically handle restaurant reservations for **Pizza 42**.
+An ultra-realistic AI phone system using **Twilio** + **OpenAI Realtime API** to automatically handle restaurant reservations for **Pizza**.
 
 ##  Features
 
