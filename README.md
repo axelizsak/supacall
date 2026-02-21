@@ -1,6 +1,6 @@
 # SupaCall - AI Phone System for Restaurant Reservations
 
-An ultra-realistic AI phone system using **Twilio** + **OpenAI Realtime API** to automatically handle restaurant reservations for **Pizza**.
+A realistic AI phone system using **Twilio** + **GPT** to automatically handle restaurant reservations.
 
 ##  Features
 
@@ -259,30 +259,6 @@ location /media-stream {
 - The Realtime API requires a stable connection
 - Try changing the voice in `session_update` (options: alloy, echo, fable, onyx, nova, shimmer)
 
-##  Estimated costs
-
-### Twilio
-- Phone number: ~€1/month
-- Incoming calls: ~€0.013/minute
-- [Twilio pricing](https://www.twilio.com/pricing)
-
-### OpenAI Realtime API
-- Audio input: $0.06/minute
-- Audio output: $0.24/minute
-- Approximately €0.30/minute per call
-- [OpenAI pricing](https://openai.com/pricing)
-
-**Example**: For 100 calls averaging 3 minutes:
-- Twilio: 100 × 3 × €0.013 = €3.90
-- OpenAI: 100 × 3 × €0.30 = €90
-- **Total: ~€94/month**
-
-##  Security
-
-- ✅ Never commit the `.env` file
-- ✅ Use HTTPS in production
-- ✅ Validate Twilio webhooks with their signature
-- ✅ Restrict API access with authentication
 
 ##  Resources
 
